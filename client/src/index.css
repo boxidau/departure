@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.routeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  margin-top: 10px;
+}
+
+.route {
+  width: 300px;
+  padding: 16px;
+  text-align: left;
+  margin-left: 10px;
+  background: #DDDDDDDD;
+}
+
+.route .col.fa {
+  color: #AAA;
+  margin: 3px;
+}
+
+.routeTransitStepContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 30px;
+  width: 290px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.routeTransitStepSymbol {
+  margin-left: 7px;
+  margin-right: 7px;
+  height: 100%;
+  background: #bfbfbf;
+  width: 1px;
+}
+
+.routeTransitStepText {
+  margin-left: 10px;
+  color: #444;
+}
+
+.routeLocationStepContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 290px; 
+}
+
+.routeLocationStepText {
+  padding-left: 5px;
+}
+
+.routeLocationStepSymbol {
+  border: 1px solid #EEE;
+  border-radius: 7.5px;
+  width: 15px;
+  height: 15px;
+  background-color: #2266AA;
+}
+
+.countdownTimer {
+  width: 100%;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'VT323', sans-serif;
+}

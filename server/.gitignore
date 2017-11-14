@@ -1,0 +1,9 @@
+private_data
+departure.cfg
+
+# python stuuuuf
+.env
+.idea
+**.DS_*
+__pycache__
+**.pyc

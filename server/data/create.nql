@@ -1,0 +1,6 @@
+CREATE (home:Location {name: 'Home', latitude:-122.11, longitude:55.33})
+CREATE (caltrain_22:Location {name: '22nd St Caltrain', latitude:-122.11, longitude:55.33})
+CREATE (rwc:Location {name: 'RWC Caltrain', latitude:-122.11, longitude:55.33})
+CREATE (home)-[:WALK {duration: 720}]->(caltrain_22),
+ 	(caltrain_22)-[:TRAIN {departure_time: '8:03', arrival_time: '8:34'}]->(rwc),
+ 	(caltrain_22)-[:TRAIN {departure_time: '8:39', arrival_time: '9:11'}]->(rwc)

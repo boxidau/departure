@@ -1,0 +1,2 @@
+MATCH (origin:Location {name: 'RWC Caltrain'}), (destination:Location {name: 'Private Shuttle Stop'})
+CREATE (origin)-[:WALK {duration: 600}]->(destination)

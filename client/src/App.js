@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import Route from './components/route'
-import Config from './config'
 
 class App extends Component {
   constructor(props) {
@@ -37,9 +36,8 @@ class App extends Component {
   }
   
   loadData() {
-    const config = new Config();
-    let uri = config.route_server_proto;
-    uri += '://' + config.route_server + '/routes';
+    let uri = process.env.REACT_APP_ROUTE_SERVER_PROTO;
+    uri += '://' + process.env.REACT_APP_ROUTE_SERVER + '/routes';
     uri += window.location.pathname;
     console.log(uri);
     axios.get(uri)
